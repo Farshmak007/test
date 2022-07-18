@@ -1,0 +1,367 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 18px;
+}
+
+
+
+.block2 {
+    width: 100%;
+    max-width: 1296px;
+}
+
+ul {
+    /* margin-top: 20px; */
+    display: flex;
+    list-style: none;
+
+}
+
+li {
+    font-size: .8em;
+    padding:0 2rem;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    border-right: 2px solid red;
+
+}
+img {
+    padding: 0 2rem;
+}
+
+.block1 {
+    display: flex;
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+
+}
+
+
+/* 
+.rem {
+    font-size: 1.2rem;
+}
+
+
+.block1 {
+    font-size: 1em;
+    margin-top: 1.5em;
+    padding-left: 1.5em;
+}
+
+.one {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+} */
+
+
+/* ! */
+.link a{
+    display: block;
+    margin: 10px            ;
+}
+
+/* a {
+    color: red;
+} */
+
+/* .link a {
+    color: black;
+} */
+
+/* .yandex {
+    color: green;
+    text-decoration: none;
+} */
+
+
+/* a.yandex {
+    color: hotpink;
+}
+ */
+
+
+ /* a[href] {
+     color: red;
+ } */
+
+ /* a[href^="https"] {
+     color: red;
+ } */
+
+ /* a[href*="y"] {
+    color: black;
+}
+
+a[href~="yandex"] {
+    text-transform: uppercase;
+}
+
+
+a[ href="https://yandex.ru/"] {
+    background-color: black;
+    color: white;
+}
+
+[href="https://www.google.ru/webhp?hl=ru"] {
+    color:green;
+    text-transform: uppercase;
+}
+
+[title~="телепрограмма"] {
+    color: yellow;
+    font-size: 25px;
+}
+
+
+a[title|="youtube"] {
+    color: red;
+    background-color: black;
+}
+
+#google {
+    border: 3px dashed blue;
+} */
+
+
+nav{
+    display: inline-flex;
+}
+
+[href*="prof"] {
+    text-decoration: none;
+    padding: 15px 60px;
+    background-color: thistle;
+}
+
+
+
+
+a[href="https://prof-smes.ru/catalog/"]::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(/test/img/catalog.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+
+a[href="https://prof-smes.ru/uslugi.php"]::before{
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(/test/img/repair.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+
+a[href="https://prof-smes.ru/catalog/ni/c_akcii.php"]::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+background-image: url(/test/img/discount.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+
+a[href="https://prof-smes.ru/dost.php"]::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(/test/img/delivery.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+
+
+[title="Звонок"] {
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    
+}
+
+
+[title="Звонок"]::before {
+    content: "";
+    display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+    background-image: url(/test/img/phon.svg);
+
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+
+
+.menu-two {
+    margin-top: 40px;
+}
+
+[href*="salon"] {
+    background-color: rgb(153, 40, 40);
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px; 
+}
+
+[href*="salon"]:hover {
+   transition: .5s ease-in-out;
+    background-color: violet;
+}
+
+
+[title~="заказать"] {
+    background-color: tomato;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+}
+
+
+.menu-three {
+    margin-top: 30px;
+}
+
+
+[href*="http://jemchujina"] {
+    background-color: rgba(0, 0, 0, 0.924);
+    color: rgba(255, 255, 255, 0.897);
+    padding: 20px;
+    text-decoration: none;
+}
+
+ [href="http://jemchujina-dent.ru/"]::before {
+     display: inline-block;
+     content: "";
+     background-image: url(img/uslugi.svg);
+     /* vertical-align: middle; */
+     background-repeat: no-repeat;
+     padding-right: 10px;
+     width: 20px;
+     height: 20px;
+ }
+ [href="http://jemchujina-dent.ru/nashi-vrachi.html"]::before {
+          display: inline-block;
+     content: "";
+     background-image: url(img/doctor.svg);
+     /* vertical-align: middle; */
+     background-repeat: no-repeat;
+     padding-right: 10px;
+     width: 20px;
+     height: 20px;
+ }
+ [href="http://jemchujina-dent.ru/portfolio.html"]::before {
+    display: inline-block;
+    content: "";
+    background-image: url(img/our-work.svg);
+    /* vertical-align: middle; */
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    width: 20px;
+    height: 20px;
+ }
+ [href="http://jemchujina-dent.ru/aktsii.html"]::before {
+    display: inline-block;
+    content: "";
+    background-image: url(img/actii.svg);
+    /* vertical-align: middle; */
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    width: 20px;
+    height: 20px;
+ }
+ [href="http://jemchujina-dent.ru/kontakty.html"]::before {
+    display: inline-block;
+    content: "";
+    background-image: url(img/contact.svg);
+    /* vertical-align: middle; */
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    width: 20px;
+    height: 20px;
+ }
+
+ [href*="http://jemchujina"]:hover {
+     border-top: 5px solid red;
+     transition: .2s;
+     /* color: green; */
+ }
+
+ [title="звонок"]{
+    font-size: 16px;
+    width: 120px;
+ }
+
+ [title="звонок"]::before {
+    display: inline-block;
+    content: "";
+    background-image: url(img/phon.svg);
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    width: 20px;
+    height: 30px;
+ }
+ 
+
+ .menu-four {
+     margin-top: 40px;
+     
+ }
+
+ [href*="www.youtube"] {
+     color: black;
+     text-decoration: none;
+     padding: 20px;
+     border-radius: 10px;
+     border:2px solid blueviolet;
+     margin: 10px;
+ }
+
+
+ [href*="www.youtube"]:hover {
+     background-color: blueviolet;
+     color: white;
+ }
+
+ .menu-five {
+     margin-top: 40px;
+ }
+
+ [href*="www.kfc."] {
+     text-decoration: none;
+     color: #2c2c2c;
+    padding: 10px 40px;
+ }
+
+ [href*="www.kfc."]:hover{
+     color: red;
+ }
+
+ [tite="войти"]::before {
+    display: inline-block;
+    content: "";
+    background-image: url(img/contact.svg);
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    width: 20px;
+    height: 30px;
+ }
